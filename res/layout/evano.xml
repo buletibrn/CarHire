@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+      <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+         <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="184dp"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@+id/linearLayout1"
+            android:layout_alignParentLeft="true"
+            android:ems="10" >
+  <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/browse1"
+        android:layout_width="95dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:text="Browse" />
+
+    </LinearLayout>
+   
+   
+ <Button
+        android:id="@+id/save1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginLeft="93dp"
+        android:layout_marginTop="38dp"
+        android:text="Save" />
+
+ <TextView
+     android:id="@+id/Todate"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignRight="@+id/save1"
+     android:layout_below="@+id/linearLayout1"
+     android:layout_marginRight="46dp"
+     android:layout_marginTop="16dp"
+     android:text="TextView" />
+
+</RelativeLayout>

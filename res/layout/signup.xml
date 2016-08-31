@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!--  Header aligned to top-->
+     <RelativeLayout
+         android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="#FC9"
+    android:gravity="center" >
+    
+      
+    <TextView
+        android:id="@+id/Todate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:text="Mobile Car Hiring System" />
+    </RelativeLayout>
+   
+
+<!-- Footer aligned to bottom -->
+<RelativeLayout
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:background="#FC1"
+       android:gravity="center"
+    >
+     
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="Sign Up" />
+    </RelativeLayout>
+    <!-- scrollable below header and above footer -->
+ <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/header"
+        android:layout_above="@id/footer" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+       
+    <EditText
+        android:id="@+id/fName"
+        android:hint="First Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Todate"
+        android:layout_marginTop="20dp"
+        android:ems="10" >
+
+       </EditText>
+
+    <EditText
+        android:id="@+id/sName"
+        android:hint="Second Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fName"
+        android:layout_below="@+id/fName"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:hint="Email Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sName"
+        android:layout_below="@+id/sName"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etIdNo"
+        android:hint="Id Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etEmail"
+        android:layout_below="@+id/etEmail"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/etMobileNo"
+        android:hint="Mobile Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etIdNo"
+        android:layout_below="@+id/etIdNo"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/etCreditNo"
+        android:hint="Credit Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etMobileNo"
+        android:layout_below="@+id/etMobileNo"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <EditText
+        android:id="@+id/etUName"
+        android:hint="User Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etCreditNo"
+        android:layout_below="@+id/etCreditNo"
+        android:layout_marginTop="20dp"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:hint="Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etUName"
+        android:layout_below="@+id/etUName"
+        android:ems="10"
+        android:inputType="textPassword" />
+  </LinearLayout>
+    
+</ScrollView>
+
+
+</RelativeLayout>
+

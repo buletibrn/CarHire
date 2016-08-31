@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   android:background="#F7F7F7"
+    android:paddingBottom="40dp" >
+     <RelativeLayout
+         android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="#6D7B8D"
+    android:gravity="center" >
+    
+ 
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+ />
+ 
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:singleLine="true"
+  android:textColor="#ff4500"
+   android:id="@+id/Todate"
+        android:textSize="20dp"
+android:scrollHorizontally="true"
+android:ellipsize="marquee"
+android:marqueeRepeatLimit ="marquee_forever"
+android:focusable="true"
+android:focusableInTouchMode="true"
+android:text=" Welcome To  Mobile Car Hiring System,Enjoy!!" />
+ 
+
+   
+    
+     <Gallery
+        android:id="@+id/gallery1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp" />
+     
+     
+    </RelativeLayout>
+    
+    <RelativeLayout
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:background="#6D7B8D"
+       android:gravity="center"
+       android:paddingLeft="40dp"
+    android:paddingTop="60dp"
+    >
+    <Button
+        android:id="@+id/btnSiggnUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center"
+          android:textColor="#ff4500"
+        android:text="Sign Up" />
+
+    <Button
+        android:id="@+id/btnLoggin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_gravity="center"
+       android:textColor="#ff4500"
+         android:layout_toRightOf="@+id/btnSiggnUp"
+        android:text="Login" />
+
+   </RelativeLayout>
+
+</RelativeLayout>
